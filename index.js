@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 const cors = require('cors')
 
 app.use(bodyParser.json({ type: "application/*+json" }));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(bodyParser.raw({ type: "application/vnd.custom-type" }));
 app.use(bodyParser.text({ type: "text/html" })); 
